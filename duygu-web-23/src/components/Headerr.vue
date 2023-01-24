@@ -184,14 +184,15 @@
                                                                 </RouterLink>
                                                         </li>
                                                         <li class="header-divider"></li>
-                                                        <li class="cart-item has-icon has-dropdown"><a
-                                                                        href="https://www.kzkulaklik.com/sepet/"
+                                                        <li class="cart-item has-icon has-dropdown">
+                                                                <RouterLink
+                                                                        to="/cart"
                                                                         title="Sepet"
                                                                         class="header-cart-link is-small"><i
                                                                                 class="icon-shopping-basket"
                                                                                 data-icon-label="0">
                                                                         </i>
-                                                                </a>
+                                                                </RouterLink>
                                                                 <ul class="nav-dropdown nav-dropdown-default">
                                                                         <li class="html widget_shopping_cart">
                                                                                 <div

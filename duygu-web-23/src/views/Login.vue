@@ -15,7 +15,8 @@
                     <div class="account-login-inner">
                       <h3 class="uppercase">Giriş Yap</h3>
   <!--Giriş Yap-->
-                      <form class="woocommerce-form woocommerce-form-login login"
+                      <form 
+                       class="woocommerce-form woocommerce-form-login login"
                       >
                         <p
                           class="
@@ -27,7 +28,8 @@
                             Kullanıcı adı veya e-posta adresi&nbsp;
                             <span class="required">*</span>
                           </label>
-                          <input type="text"  class="woocommerce-Input woocommerce-Input--text input-text"
+                          <input type="text"  v-model="name"
+                          class="woocommerce-Input woocommerce-Input--text input-text"
                           />
                         </p>
                         <p
@@ -41,7 +43,8 @@
                             <span class="required">*</span>
                           </label>
                           <span class="password-input">
-                            <input type="password"  class="woocommerce-Input woocommerce-Input--text input-text"/>
+                            <input type="password" v-model="password"
+                             class="woocommerce-Input woocommerce-Input--text input-text"/>
                             <span class="show-password-input"></span>
                           </span>
                         </p>
@@ -77,7 +80,9 @@
                             name="_wp_http_referer"
                             value="/hesabim/"
                           />
-                          <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" value="Giriş Yap">
+                          <button @click="('signup')" 
+                          class="woocommerce-button button woocommerce-form-login__submit" 
+                          >
                             Giriş Yap
                           </button>
                         </p>
@@ -158,4 +163,22 @@
       </div>
     </div>
   </template>
-  
+
+<script lang="ts">
+export default{
+  name: 'Login',
+  data() {
+    return{
+      name : '', 
+      password: ''
+    }
+  },
+  methods: {
+    signup(){
+      console.log(this.name);
+      console.log(this.password);
+    }
+  }
+}
+
+</script>

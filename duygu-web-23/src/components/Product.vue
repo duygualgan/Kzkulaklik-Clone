@@ -4,7 +4,7 @@
         <div class="product-div">
           <div class="product-div-left">
             <div class="img-container">
-              <img src="../assets/w1.png" alt="watch" />
+              <img src="../assets/logo.svg" alt="watch" />
             </div>
             
           </div>
