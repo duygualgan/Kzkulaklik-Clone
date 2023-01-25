@@ -28,23 +28,25 @@
                             Kullanıcı adı veya e-posta adresi&nbsp;
                             <span class="required">*</span>
                           </label>
-                          <input type="text"  v-model="name"
-                          class="woocommerce-Input woocommerce-Input--text input-text"
+                          <input type="email" placeholder="email"
+                           v-model="email"
+                          class="woocommerce-Input
+                           woocommerce-Input--text input-text"
                           />
                         </p>
                         <p
-                          class="
-                            woocommerce-form-row woocommerce-form-row--wide
-                            form-row form-row-wide
-                          "
+                          class="woocommerce-form-row woocommerce-form-row--wide
+                            form-row form-row-wide"
                         >
                           <label for="password">
                             Parola&nbsp;
                             <span class="required">*</span>
                           </label>
                           <span class="password-input">
-                            <input type="password" v-model="password"
-                             class="woocommerce-Input woocommerce-Input--text input-text"/>
+                            <input type="text" 
+                            v-model="password"
+                             class="woocommerce-Input
+                              woocommerce-Input--text "/>
                             <span class="show-password-input"></span>
                           </span>
                         </p>
@@ -80,7 +82,7 @@
                             name="_wp_http_referer"
                             value="/hesabim/"
                           />
-                          <button @click="('signup')" 
+                          <button @click="signup" 
                           class="woocommerce-button button woocommerce-form-login__submit" 
                           >
                             Giriş Yap
@@ -164,21 +166,6 @@
     </div>
   </template>
 
-<script lang="ts">
-export default{
-  name: 'Login',
-  data() {
-    return{
-      name : '', 
-      password: ''
-    }
-  },
-  methods: {
-    signup(){
-      console.log(this.name);
-      console.log(this.password);
-    }
-  }
-}
+<script setup lang="ts">
 
 </script>
