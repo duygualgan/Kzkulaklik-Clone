@@ -1,3 +1,33 @@
+<!-- <script lang="ts">
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import kulakliklarVue from '@/views/kulakliklar.vue';
+//import FirebaseApp from "firebase";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCk4WcqOuAWwhuZyukiAY2rRyWELggHzs0",
+  authDomain: "kzkulaklik-b88e5.firebaseapp.com",
+  databaseURL: "https://kzkulaklik-b88e5-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "kzkulaklik-b88e5",
+  storageBucket: "kzkulaklik-b88e5.appspot.com",
+  messagingSenderId: "386107343162",
+  appId: "1:386107343162:web:16dba25f42d68491a3d003",
+  measurementId: "G-HBDXVZP5JJ"
+};
+
+let app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+let db= app.database()
+let kulakliklarRef = db.ref("kulakliklar")
+
+export default {
+    name: "App",
+    firebase : {
+        kulakliklar : kulakliklarRef    
+    }
+};
+</script> -->
+
 <template>
     <div id="content" class="content-area page-wrapper back" role="main">
         <div class="row row-main">
@@ -16,10 +46,11 @@
                             class="product-small col has-hover product type-product post-160 status-publish first instock product_cat-kz-kulaklik product_tag-kulaklik product_tag-kz-kulaklik has-post-thumbnail sale featured shipping-taxable purchasable product-type-variable">
                             <div class="col-inner">
                                 <div class="badge-container absolute left top z-1"></div>
-                                <div class="product-small box ">
+                                <div  class="product-small box ">
                                     <div class="box-image">
-                                        <div class="image-fade_in_back">
-                                            <a href="https://www.kzkulaklik.com/urun/kz-zsn-1ba1dd-hibrit-kulaklik/"
+                                        <div  class="image-fade_in_back">
+                                            <RouterLink to="/ProductDetail"
+                                           
                                                 aria-label="KZ ZSN Pro 1BA+1DD Hibrit Kulaklık">
                                                 <img width="247" height="247"
                                                     src="https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Kulak-Ici-Kulaklik-247x247.jpg"
@@ -37,7 +68,7 @@
                                                     srcset="https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-247x247.jpg 247w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-300x300.jpg 300w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-150x150.jpg 150w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-100x100.jpg 100w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1.jpg 510w"
                                                     data-srcset="https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-247x247.jpg 247w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-300x300.jpg 300w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-150x150.jpg 150w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1-100x100.jpg 100w, https://www.kzkulaklik.com/wp-content/uploads/2019/03/KZ-ZSN-Pro-Mikrofonlu-Kulak-Ici-Kulaklik-Siyah-1.jpg 510w"
                                                     sizes="(max-width: 247px) 100vw, 247px">
-                                            </a>
+                                            </RouterLink>
                                         </div>
                                         <div class="image-tools is-small top right show-on-hover"></div>
                                         <div class="image-tools is-small hide-for-small bottom left show-on-hover">
@@ -50,8 +81,8 @@
                                         <div class="title-wrapper">
                                             <p class="name product-title woocommerce-loop-product__title">
                                                 <a href="https://www.kzkulaklik.com/urun/kz-zsn-1ba1dd-hibrit-kulaklik/"
-                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link">KZ
-                                                    ZSN Pro 1BA+1DD Hibrit Kulaklık</a>
+                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    </a>
                                             </p>
                                         </div>
                                         <div class="price-wrapper">

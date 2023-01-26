@@ -4,14 +4,17 @@
                         <div id="masthead" class="header-main hide-for-sticky nav-dark">
                                 <div class="header-inner flex-row container logo-left medium-logo-center"
                                         role="navigation">
-                                        <div id="logo" class="flex-col logo"><a href="https://www.kzkulaklik.com/"
-                                                        title="KZ Kulaklık - KZ Kulaklık Modelleri Satış" rel="home">
+                                        <div id="logo" class="flex-col logo">
+                                                <RouterLink to="/"
+                                                        title="KZ Kulaklık - KZ Kulaklık Modelleri Satış"
+                                                         rel="home">
                                                         <img width="200" height="105"
                                                                 src="https://www.kzkulaklik.com/wp-content/uploads/2021/08/KZ-logo-kzkulaklik.com_.png"
                                                                 class="header_logo header-logo" alt="KZ Kulaklık"><img
                                                                 width="200" height="105"
                                                                 src="https://www.kzkulaklik.com/wp-content/uploads/2021/08/KZ-logo-kzkulaklik.com_.png"
-                                                                class="header-logo-dark" alt="KZ Kulaklık"></a></div>
+                                                                class="header-logo-dark" alt="KZ Kulaklık">
+                                                </RouterLink></div>
                                         <div class="flex-col show-for-medium flex-left">
                                                 <ul class="mobile-nav nav nav-left ">
                                                         <li class="nav-icon has-icon">
@@ -132,17 +135,17 @@
                                                         </li>
                                                         <li id="menu-item-43"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-19 current_page_item menu-item-43 active menu-item-design-default">
-                                                                <a href="https://www.kzkulaklik.com/"
+                                                                <RouterLink to="/"
                                                                         aria-current="page" class="nav-top-link">Ana
-                                                                        Sayfa</a></li>
+                                                                        Sayfa</RouterLink></li>
                                                         <li id="menu-item-638"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-638 menu-item-design-default">
                                                                 <RouterLink to="/kulakliklar"
                                                                         class="nav-top-link">KZ Kulaklık</RouterLink></li>
                                                         <li id="menu-item-755"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-755 menu-item-design-default">
-                                                                <a href="https://www.kzkulaklik.com/urun-kategori/yedek-kulaklik-kablosu-yukseltme-kablolari"
-                                                                        class="nav-top-link">Kablolar</a></li>
+                                                                <RouterLink to="/kablolar"
+                                                                        class="nav-top-link">Kablolar</RouterLink></li>
                                                         <li id="menu-item-18902"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18902 menu-item-design-default">
                                                                 <RouterLink to="/contactUs"
